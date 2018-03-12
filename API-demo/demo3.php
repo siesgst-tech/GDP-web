@@ -45,7 +45,7 @@ if (!empty($data["username"]) && !empty($data["password"]))
         // set message
         $message["type"] = "SUCCESS";
         $message["message"] = "LOGIN SUCCESSFUL";
-        $message["details"] = $result->mysql_fetch_assoc();
+        $message["details"] = $result->fetch_assoc();
 
         // convert the array to JSON format
         $json = json_encode($message);
